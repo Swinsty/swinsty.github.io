@@ -25,6 +25,11 @@ a{
 	color:#ffffff;
 }
 
+.container{
+	padding-left: 0;
+	padding-right: 0;
+}
+
 /** Header **/
 .header{
 	background-color: 
@@ -73,13 +78,15 @@ a.btn:hover {
     text-align: center;
     position: relative;
     top: 30px;
-    padding: 50px;
+    padding: 0;
 }
 
 .jumbotron h1 {
     color: #fff;
-    font-size: 10rem;
+    font-size: 60px;
     text-shadow: 30px 20px 30px rgba(0,0,0, 1);
+    margin-bottom: 130px;
+    margin-top: 80px;
  }
 
 /** supporting **/
@@ -157,7 +164,7 @@ a.btn:hover {
 
 .about-me{
 	height: 600px;
-	background: url("https://www.britishorienteering.org.uk/images/uploaded/Men's%20sprint%20team.jpg") no-repeat center center fixed;
+	background: url("https://www.britishorienteering.org.uk/images/uploaded/Men's%20sprint%20team.jpg") no-repeat left center fixed;
 	background-size: cover;
 }
 
@@ -165,12 +172,14 @@ a.btn:hover {
 	position: absolute;
 }
 
-.about-me .container {
+.about-me .container .abtext {
 	background-color: rgba(0, 0, 0, 0.7);
 	text-align: center;
 	color: #ffffff;
 	margin-top: 160px;
 	position: relative;
+	width: 100%;
+
 }
 
 /** Mapping **/
