@@ -1,23 +1,220 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<link rel="stylesheet" href="css/bootstrap.min.css"/>
+		<link rel="stylesheet" href="css/style.css"/>
+		<link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet" type="text/css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<div class="top">
 
-<div class="home">
+				<div class='navbar navbar-inverse navbar-static-top'>
+					<div class='container'>
+						<div class="navbar-header">
+					        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+					            <span class="sr-only">Toggle navigation</span>
+					            <span class="icon-bar"></span>
+					            <span class="icon-bar"></span>
+					            <span class="icon-bar"></span>
+					         </button>
+					        <!-- title <a class="navbar-brand" href="#">Chris Smithard</a> -->
+					    </div>
+						<div id="navbar" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
+							<ul class='nav navbar-nav navbar-right'>
+								<li><a href="#about-me" class="btn">About Me</a></li>
+								<li><a href="#mapping" class="btn">Mapping</a></li>
+								<li><a href="#spike" class="btn">Spike</a></li>
+								<!--<li><a href="#contact" class="btn">Contact</a></li> -->
+							</ul>
+						</div>
+					</div>
+					<div class='border'></div>
+				</div>
+				
+			
+			<div class="jumbotron"> 
+				<div class="container"> 
+					<h1>Chris Smithard</h1> 
+				</div> 
+			</div>
 
-  <h1 class="page-heading">Posts</h1>
+			<div class="supporting">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-4"><a href="#about-me">
+							<div class="circle imagebackground">
+								<div id="image1">
+								</div>
+							</div>
+							<h2> About Me </h2>
+							<p> What I get up to </p>
+						</a>
+						</div>
+						<div class="col-md-4"><a href="#mapping">
+							<div class="circle" id='image2'>
+							</div>
+							<h2> Mapping </h2>
+							<p> Creating orinteering maps </p>
+						</a>
+						</div>
+						<div class="col-md-4"><a href="#spike">
+							<div class="circle imagebackground">
+								<div id="image3">
+								</div>
+							</div>
+							<h2> Spike </h2>
+							<p> Orienteering Performance Tool</p>
+						</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+		<!-- About me -->
+		<div class='border'></div>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+		<div class='about-me'> <a NAME='about-me'></a>
+			<div class="col-md-12">
+			
+				<div class='container'>
+					<h2>About Me</h2>
+					<br/>
+					<p> Location: Chester, UK </p>
+					<p> Sport: Orienteering
+					<p> Occupation: Cartographer</p>
+					<p> Date of Birth: 10/04/1989 </p>
+					<p> Training: <a href='http://attackpoint.org/log.jsp/user_4017'>Attackpoint</a> </p>
+					<p> Orienteering Racing: <a  href='http://runners.worldofo.com/christophersmithard.html'>WorldofO</a> </p>
+					<p> Running Racing: <a href='http://www.thepowerof10.info/athletes/profile.aspx?athleteid=56782'>Powerof10</a> </p>
+				</div>
+			</div>
+		</div>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+		<!-- Mapping -->
+		<div class='mapping'> <a name='mapping'></a>
+			<div class='border'></div>
+			<div class='container'>
+				<div class='intro'>
+				<h2>Mapping</h2>
+				<br/>
+				<p> Creating orienteering maps since 2005 for clubs, schools, local authorities and outdoor centres.
+					<!--
+				<ul>
+					<li>Urban Areas</li>
+					<li>Schools</li>
+					<li>Forests</li>
+					<li>Parks</li>
+					<li>Moorland</li>
+					<li>Outdoor Centres</li>
+				</ul> -->
+				</p>
+				<p> If you'd like to find out more about what I can offer please get in touch <!--<a class='btn' href='#contact'>touch</a>--></p>
+				<br/>
+				</div>
+				<div class="supporting">
+					
+						<div class="row">
+							<div class="col-md-4">
+								<div class="circle" id='imageForest'>
+								</div>
+								<h3> Forests </h3>
+							</div>
+							<div class="col-md-4">
+								<div class="circle" id='imageUrban'>
+								</div>
+								<h3> Urban </h3>
+							</div>
+							<div class="col-md-4">
+								<div class="circle" id='imageSchool'>
+								</div>
+								<h3> Schools </h3>
+							</div>
+							<div class="col-md-4">
+								<div class="circle" id='imageOutdoorCentre'>
+								</div>
+								<h2> Outdoor Centres </h2>
+							</div>
+							<div class="col-md-4">
+								<div class="circle" id='imagePark'>
+								</div>
+								<h2> Parks </h2>
+							</div>
+							<div class="col-md-4">
+								<div class="circle" id='imageMoor'>
+								</div>
+								<h2> Moorland </h2>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
-</div>
+		<!-- Spike -->
+		<div class='spike'><a name='spike'></a>
+			<div class='border'></div>
+			<div class='container'>
+				<div class='row'>
+					<div class="col-md-6">
+						<br/>
+						<div class="circle imagebackground">
+							<div id="image3">
+							</div>
+						</div>
+						<h1>Spike</h1>
+						<br/>
+						<p> Spike is a new orienteering performance tool. Our aim is to help everyone become a better orienteer, whether you've been orienteering once or for 50 years. To do this we're creating a powerful new system that will consume lot's of data and tell you what
+						you need to do change to boost your orienteering performances. Think of spike as your personal orienteering coach.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div> 
+
+		<!-- Contact -->
+		
+		<!--
+		<div class='contact'><a name='contact'></a>
+			<div class='border'></div>
+			<div class='container'>
+				<div class='row'>
+					<div class="col-md-12">
+						
+						<h1>Contact</h1>
+						
+						<br/>
+						<form>
+						Name:
+					  	<input type="text" name="name">
+					  	<br/>
+						email:
+						<input type="text" name="email">
+						<br/>
+						message:
+						<input type="text" name="message">
+						<div class="button">
+	    					<button type="submit">Send your message</button>
+    					</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>  -->
+
+		<div class='footer'>
+			<div class='container'>
+			<p>  &copy Chris Smithard 2016 </p>
+			</div>
+		</div>
+
+
+	</body>
+</html>
+
+
+
+
